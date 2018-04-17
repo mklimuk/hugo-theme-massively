@@ -21,16 +21,10 @@
 				{{ partial "intro.html" . }}
 				{{ end }}
 
-				{{ partial "header" . }}
 				{{ partial "nav" . }}
 
 				<!-- Main -->
 					<div id="main">
-
-						{{ if eq .Site.Params.Posts.featuredpost "true" }}
-						{{ partial "posts/featured.html" (dict "firstpost" $firstPost) }}
-						{{ end }}
-						{{ partial "posts/list.html" (dict "posts" $postsPaging) }}
 
 						<!-- Footer -->
 						{{ if gt $postsPaging.TotalPages 1 }}
