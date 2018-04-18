@@ -1,6 +1,9 @@
 {{ partial "htmlhead" . }}
 	<body class="is-loading">
-
+		<!-- Google Tag Manager (noscript) -->
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TRVVPCP"
+		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<!-- End Google Tag Manager (noscript) -->
 		{{ $posts := where .Data.Pages "Type" .Site.Params.Posts.foldername }}
 		{{ $firstPost := first 1 $posts }}
 
