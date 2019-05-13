@@ -1,9 +1,7 @@
 {{ with .Site.Data.intro }}
 <div id="intro">
     <h1>
-        {{ range $i, $e := .title }}
-            {{ if $i }} <br/> {{ end }} {{ .line }}
-        {{ end }}
+        <img style="background-color: white; padding: 10px 40px; opacity: 0.7" src='{{ "images/logo.png" | absURL }}' />
     </h1>
     <p>
         {{ range $i, $e := .description }}
